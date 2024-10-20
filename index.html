@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XLTM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+           <a href="http://www.ut.edu.co/" target="_blank" ><img  src="images/logo_ut_180.png" alt="logo ut"></a> 
+           
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="http://facultadforestal.ut.edu.co/laboratorio-de-tecnologia-de-la-madera.html"  target="_blank">Nosotros</a></li>
+                <li><a href="pages/servicios.html">Servicios</a></li>
+                <li><a href="pages/especies.html">Especies</a></li>
+                <li><a href="pages/login.html">Login</a></li>
+            </ul>
+        </nav>
+        <a href="pages/contacto.html" class="btn"><button>Contacto</button></a>
+
+        <a onclick="openNav()" class="menu"><button>Menu</button></a>
+
+        <div class="overlay" id="mobile-menu">
+            <a onclick="closeNav()" href="" class="close">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Inicio</a>
+                <a href="http://facultadforestal.ut.edu.co/laboratorio-de-tecnologia-de-la-madera.html" target="_blank">Nosotros</a>
+                <a href="pages/servicios.html">Servicios</a>
+                <a href="pages/especies.html">Especies</a>
+                <a href="pages/login.html">Login</a>
+                <a href="pages/contacto.html">Contacto</a>
+            </div>
+        </div>
+    </header>
+               <main>
+                <div class="container">
+                    <div class="titulo">
+                        <h1>XILOTECA U.T</h1>
+                        <p>Descubre nuestra colección</p>
+                    </div>
+                    <div class="search-bar">
+                        <form action="https://www.google.com/search" method="get">
+                            <input type="text" name="q" id="search-input" placeholder="Buscar especies..." required>
+                            <button type="submit">Buscar</button>
+                        </form>
+                    </div>
+                    
+                </div>
+                             
+                          
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide">
+                            <img src="images/imagen1.jpg" alt="Imagen 1">
+                            <div class="caption">Algarrobo</div>
+                        </div>
+                        <div class="slide">
+                            <img src="images/imagen2.jpg" alt="Imagen 2">
+                            <div class="caption">Aceite de María</div>
+                        </div>
+                        <div class="slide">
+                            <img src="images/imagen3.jpg" alt="Imagen 3">
+                            <div class="caption">Algarrobo</div>
+                        </div>
+                        <div class="slide">
+                            <img src="images/imagen4.jpg" alt="Imagen 4">
+                            <div class="caption">Flor de Nuez</div>
+                        </div>
+                    </div>
+                    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+            
+               
+       
+    </main>
+    <footer>
+        <p>&copy; 2024 Universidad del Tolima. Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
